@@ -28,11 +28,11 @@ public static void main(String[] args) throws InterruptedException {
 		page.navigate("http://way2automation.com");
 		System.out.println(page.title());
 		
-		//Thread.sleep(2000);
+		Thread.sleep(2000);
 		
 		
-		//page.close();
-		//playwright.close();
+		page.close();
+		playwright.close();
 		
 		
 		
