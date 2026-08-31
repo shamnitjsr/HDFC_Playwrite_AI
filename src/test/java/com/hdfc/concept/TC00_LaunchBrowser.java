@@ -12,7 +12,7 @@ import com.microsoft.playwright.Playwright;
 public class TC00_LaunchBrowser {
 
 public static void main(String[] args) throws InterruptedException {
-		
+																						
 		Dimension screenSize = Toolkit.getDefaultToolkit().getScreenSize();
 		double width = screenSize.getWidth();
 		double height = screenSize.getHeight();
