@@ -16,7 +16,7 @@ public class TC03_TestHandlingDropdowns {
 		Browser browser = playwright.chromium().launch(new BrowserType.LaunchOptions().setHeadless(false));
 		
 		Page page = browser.newPage();
-		page.navigate("https://www.wikipedia.org/");
+		page.navigate("https://www.wikipedia.org/");	
 		
 		//select by value
 		//page.selectOption("select", "hi");

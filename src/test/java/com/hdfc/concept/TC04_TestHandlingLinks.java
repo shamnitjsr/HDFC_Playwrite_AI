@@ -1,6 +1,12 @@
 package com.hdfc.concept;
 
-import org.xml.sax.Locator;
+
+
+import com.microsoft.playwright.Browser;
+import com.microsoft.playwright.BrowserType;
+import com.microsoft.playwright.Locator;
+import com.microsoft.playwright.Page;
+import com.microsoft.playwright.Playwright;
 
 public class TC04_TestHandlingLinks {
 public static void main(String[] args) {

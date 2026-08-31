@@ -14,8 +14,8 @@ public class TC01_TestLocators {
 		Page page = browser.newPage();
 		page.navigate("http://gmail.com");
 	
-		page.locator("#identifierId").type("trainer@way2automation.com");
-		//page.locator("[id='identifierId']").type("trainer@way2automation.com");
+		//page.locator("#identifierId").type("trainer@way2automation.com");
+		page.locator("[id='identifierId']").type("trainer@way2automation.com");
 		//page.type("id=identifierId", "trainer@way2automation.com", new TypeOptions().setDelay(100));
 		//page.locator("[type='text']").type("trainer@way2automation.com");
 		//page.click("text=Next");
