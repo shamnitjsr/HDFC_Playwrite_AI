@@ -14,7 +14,8 @@ public class TC50_CountLinksExample {
 		{
 			Browser browser = playwright.chromium().launch(new BrowserType.LaunchOptions().setHeadless(false));
 			Page page = browser.newPage();
-			page.navigate("https://www.wikipedia.org/");
+			//page.navigate("https://www.wikipedia.org/");
+			page.navigate("https://opensource-demo.orangehrmlive.com/web/index.php/auth/login");
 			Locator links = page.locator("a");
 			System.out.println(links.count());
 		}

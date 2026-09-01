@@ -1,11 +1,13 @@
 package com.hdfc.stepdefs;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.testng.Assert;
 
 import com.hdfc.config.PlaywrightConfig;
 import com.hdfc.pages.LoginPage;
 import com.microsoft.playwright.Page;
 
+import io.cucumber.java.After;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
@@ -33,7 +35,7 @@ public class LoginSteps {
 		Assert.assertTrue(page.url().contains("dashboard"));
 	}
 
-	@Ater
+	@After
 	public void tearDown() {
 		PlaywrightConfig.closeBrowser();
 	}

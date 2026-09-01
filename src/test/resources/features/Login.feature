@@ -1,10 +1,15 @@
-Feature: Apllication Login Functionlality
+Feature: Application Login Functionality
 
-  Scenario Outline: Successful login with Valid credentials
-    Given User navigates to login page "https://opensource-demo.orangehrmlive.com/web/index.php/auth/login"
-    When User enters valid "<username>" and "<password>"
-    Then User should be redirected to the dashboard page
+@sanity
+Scenario Outline: Successful login with valid credentials
 
-  Example:
-    	|username|password|
-    	|Admin|admin123|
+Given User navigates to login page "https://opensource-demo.orangehrmlive.com/web/index.php/auth/login"
+
+When User enters valid "<username>" and "<password>"
+
+Then User should be redirected to the dashboard page
+
+Examples:
+  | username | password |
+  | Admin    | admin123 |
+
